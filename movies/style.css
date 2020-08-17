@@ -1,0 +1,69 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  text-align: center;
+  text-decoration-color: #17252a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #3AAFA9;
+}
+
+table {
+  font-family: "Lucida Console", Courier, monospace;
+  border-collapse: collapse;
+  width:60%;
+  border: 1px solid #eb8d3a;
+}
+
+td, th {
+  border: 1px solid #dbcbcb;
+  text-align: left;
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #c8d8d7c9;
+}
+
+.navbar {
+  background-color: #3AAFA9;
+  border-color: #E7E7E7;
+}
+a
+{
+  font-family: "Lucida Console", Courier, monospace;
+  color: #17252a;
+}
+
+p{
+  color: #17252a;
+  font-family: "Lucida Console", Courier, monospace;
+}
+h1{
+  text-align: center;
+  color: #17252a;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("C:\Users\845160\Documents\movies\bg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\845160\Documents\movies\style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-sm">
+  <a class="navbar-brand" href="#">Movies crusier
+
+  
+    <img src="C:\Users\845160\Documents\movies\movie.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+ 
+  </a>
+ 
+    
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer</a>
+            </li><div class="">
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Admin</a>
+            </li>
+          </ul>
+      
+       
+  </div>  
+</nav>
+
+
+<div class="bg">
+  <div class="container" style="margin-top:100px">
+    <h1>Edited SuccesFully</h1>
+    <div class="row">
+     
+      <div class="col-lg-12 col-sm-12 col-md-9">
+        <div class="table-responsive">
+       <table class="table  table-bordered" id="mytable">
+  
+        <thead class=" table-dark">
+          <tr>
+              <th>Title</th>
+              <th>Box Office</th>
+              <th>Active</th>
+              <th>Date Of Launch</th>
+              <th>Genre</th>
+              <th>Has Teaser</th>
+              <th>Action</th> 
+              <th>Delete</th>
+          </tr>
+          </thead>
+          <tbody>
+           
+    
+        </tbody>
+      </table>
+    </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-black">copyright</span>
+  </div>
+</footer>
+<script >
+
+
+var table = document.getElementById("mytable").getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow(table.length);
+    cell1 = newRow.insertCell(0);
+    cell1.innerHTML =localStorage.getItem("Utitle");
+
+    cell2=newRow.insertCell(1);
+    cell2.innerHTML=localStorage.getItem("UboxOffice");
+
+    cell3=newRow.insertCell(2);
+    cell3.innerHTML=localStorage.getItem("Uactive");
+
+    cell4=newRow.insertCell(3);
+    cell4.innerHTML=localStorage.getItem("Udate");
+
+
+
+    cell5=newRow.insertCell(4);
+    cell5.innerHTML=localStorage.getItem("Ugenre");
+
+    cell6=newRow.insertCell(5);
+    cell6.innerHTML=localStorage.getItem("Uteaser");
+
+    cell7 = newRow.insertCell(6);
+ cell7.innerHTML = ` <a onClick="onEdit(this)">Edit</a>`;
+
+
+
+
+</script>

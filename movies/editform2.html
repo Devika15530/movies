@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\845160\Documents\movies\style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-sm">
+  <a class="navbar-brand" href="#">Movies crusier
+
+  
+    <img src="C:\Users\845160\Documents\movies\movie.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+ 
+  </a>
+ 
+    
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer</a>
+            </li><div class="">
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Admin</a>
+            </li>
+          </ul>
+      
+       
+  </div>  
+</nav>
+
+<div class="container">
+    <br>
+    <h3>Edit Movie</h3>
+    <br>
+    <div class="jumbotron">
+    <form  name="myForm" onsubmit="event.preventDefault();onFormSubmit();" >
+       
+      <div class="form-group">
+
+
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <label for="boxOffice">Gross($)</label>
+            <input type="text" class="form-control" id="boxOffice" name="boxOffice">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="active">Active</label><br>
+            <div>
+                <input type="radio" id="active" name="active" ><label>Yes</label>&nbsp;&nbsp;
+                <input type="radio" id="active1"  name="active"><label>No</label>
+            </div>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="dateOfLaunch">Date of Launch</label>
+          <input type="date" class="form-control" id="dateOfLaunch" name="dateOfLaunch">
+      </div>
+       
+       
+        <div class="form-group col-md-3">
+            <label for="genre">Genre</label>
+            <select id="genre" class="form-control">
+                <option value="">Choose</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="SuperHero">SuperHero</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Thiller">Thiller</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="hasTeaser" name="hasTeaser">
+            <label class="form-check-label" for="hasTeaser">
+            Has Teaser
+            </label>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+    <button class="btn btn-outline-info btn-lg" type="submit" id="submit" >Save</button>
+    </div>
+</form>
+</div>
+</div>
+
+
+
+
+<table class="table  table-bordered" id="mytable">
+  
+    <thead class=" table-dark">
+      <tr>
+          <th>Title</th>
+          <th>Box Office</th>
+          <th>Active</th>
+          <th>Date Of Launch</th>
+          <th>Genre</th>
+          <th>Has Teaser</th>
+          <th>Action</th>
+          <th>Delete</th> 
+      </tr>
+      </thead>
+      <tbody>
+       
+
+    </tbody>
+  </table>
+
+
+
+<footer class="footer">
+    <div class="container">
+      <span class="text-black">copyright</span>
+    </div>
+  </footer>
+<!-- <script src="store.js"></script> -->
+<script src="store1.js">
+
+
+
+</script>
+</body>
+</html>
